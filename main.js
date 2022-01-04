@@ -8,14 +8,14 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require('@iobroker/adapter-core');
-const FtpSrv = require('ftp-srv');
-const path = require('path');
+// const FtpSrv = require('ftp-srv');
+// const path = require('path');
 
-const port = 8021;
-const settings = {
-    url: 'ftp://0.0.0.0:' + port,
-    anonymous: false
-};
+// const port = 8021;
+// const settings = {
+//     url: 'ftp://0.0.0.0:' + port,
+//     anonymous: false
+// };
 // Load your modules here, e.g.:
 // const fs = require("fs");
 
@@ -34,7 +34,7 @@ class Template extends utils.Adapter {
         // this.on('objectChange', this.onObjectChange.bind(this));
         // this.on('message', this.onMessage.bind(this));
         this.on('unload', this.onUnload.bind(this));
-        this.ftpServer = new FtpSrv(settings);
+        // this.ftpServer = new FtpSrv(settings);
     }
 
     /**
@@ -93,26 +93,26 @@ class Template extends utils.Adapter {
         result = await this.checkGroupAsync('admin', 'admin');
         this.log.info('check group user admin group admin: ' + result);
 
-        try {
-            this.ftpServer.on('login', ({ connection, username, password }, resolve, reject) => {
-                console.log(username, password);
-                console.log(reject);
-                console.log(__filename + '/test/');
-                connection.on('STOR', (error, fileName) => {
-                    const name = path.basename(fileName);
-                    const [ip, cam, data, event] = name.split('_');
+        // try {
+        //     this.ftpServer.on('login', ({ connection, username, password }, resolve, reject) => {
+        //         console.log(username, password);
+        //         console.log(reject);
+        //         console.log(__filename + '/test/');
+        //         connection.on('STOR', (error, fileName) => {
+        //             const name = path.basename(fileName);
+        //             const [ip, cam, data, event] = name.split('_');
 
-                    console.log(ip, cam, data, event);
-                    // readFiles(fileName)
-                    // bot.sendPhoto(userAdmin, fileName);
-                });
-                return resolve({ root: './files/' });
-            });
-            this.ftpServer.listen().then(() => {
-                console.log('Ftp server is starting...');
-            });
+        //             console.log(ip, cam, data, event);
+        //             // readFiles(fileName)
+        //             // bot.sendPhoto(userAdmin, fileName);
+        //         });
+        //         return resolve({ root: './files/' });
+        //     });
+        //     this.ftpServer.listen().then(() => {
+        //         console.log('Ftp server is starting...');
+        //     });
 
-        } catch (error) { console.log(error); }
+        // } catch (error) { console.log(error); }
     }
 
     /**
