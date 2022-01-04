@@ -1,6 +1,6 @@
 {
     "common": {
-        "name": "template",
+        "name": "HiWatch",
         "version": "0.0.1",
         "news": {
             "0.0.1": {
@@ -16,37 +16,36 @@
                 "zh-cn": "首次出版"
             }
         },
-        "title": "Template (JavaScript)",
+        "title": "HiWatch (JavaScript)",
         "titleLang": {
-            "en": "Template (JavaScript)",
-            "de": "Vorlage (JavaScript)",
-            "ru": "Шаблон (JavaScript)",
-            "pt": "Modelo (JavaScript)",
-            "nl": "Sjabloon (JavaScript)",
-            "fr": "Modèle (JavaScript)",
-            "it": "Modello (JavaScript)",
-            "es": "Plantilla (JavaScript)",
-            "pl": "Szablon (JavaScript)",
-            "zh-cn": "模板 (JavaScript)"
+            "en": "HiWatch (JavaScript)",
+            "de": "HiWatch (JavaScript)",
+            "ru": "HiWatch (JavaScript)",
+            "pt": "HiWatch (JavaScript)",
+            "nl": "HiWatch (JavaScript)",
+            "fr": "HiWatch (JavaScript)",
+            "it": "HiWatch (JavaScript)",
+            "es": "HiWatch (JavaScript)",
+            "pl": "HiWatch (JavaScript)",
+            "zh-cn": "HiWatch (JavaScript)"
         },
         "desc": {
-            "en": "Template for adapter development",
-            "de": "Vorlage für die Adapterentwicklung",
-            "ru": "Шаблон для разработки адаптера",
-            "pt": "Modelo para desenvolvimento de adaptador",
-            "nl": "Sjabloon voor adapterontwikkeling",
-            "fr": "Modèle pour le développement d'adaptateurs",
-            "it": "Modello per lo sviluppo dell'adattatore",
-            "es": "Plantilla para el desarrollo de adaptadores",
-            "pl": "Szablon do opracowania adaptera",
+            "en": "HiWatch for adapter development",
+            "de": "HiWatch für die Adapterentwicklung",
+            "ru": "HiWatch для разработки адаптера",
+            "pt": "HiWatch para desenvolvimento de adaptador",
+            "nl": "HiWatch voor adapterontwikkeling",
+            "fr": "HiWatch pour le développement d'adaptateurs",
+            "it": "HiWatch per lo sviluppo dell'adattatore",
+            "es": "HiWatch para el desarrollo de adaptadores",
+            "pl": "HiWatch do opracowania adaptera",
             "zh-cn": "适配器开发模板"
         },
         "authors": [
-            "Author <author@mail.com>"
+            "bondrogeen <bondrogeen@gmail.com>"
         ],
         "keywords": [
             "ioBroker",
-            "template",
             "Smart Home",
             "home automation"
         ],
@@ -55,8 +54,8 @@
         "main": "main.js",
         "icon": "template.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/Author/ioBroker.template/main/admin/template.png",
-        "readme": "https://github.com/Author/ioBroker.template/blob/main/README.md",
+        "extIcon": "https://github.com/bondrogeen/ioBroker.HiWatch/main/admin/template.png",
+        "readme": "https://github.com/bondrogeen/ioBroker.HiWatch/blob/main/README.md",
         "loglevel": "info",
         "mode": "daemon",
         "type": "general",
@@ -66,16 +65,16 @@
         "adminTab": {
             "singleton": true,
             "name": {
-                "en": "Template (JavaScript)",
-                "de": "Vorlage (JavaScript)",
-                "ru": "Шаблон (JavaScript)",
-                "pt": "Modelo (JavaScript)",
-                "nl": "Sjabloon (JavaScript)",
-                "fr": "Modèle (JavaScript)",
-                "it": "Modello (JavaScript)",
-                "es": "Plantilla (JavaScript)",
-                "pl": "Szablon (JavaScript)",
-                "zh-cn": "模板 (JavaScript)"
+                "en": "HiWatch (JavaScript)",
+                "de": "HiWatch (JavaScript)",
+                "ru": "HiWatch (JavaScript)",
+                "pt": "HiWatch (JavaScript)",
+                "nl": "HiWatch (JavaScript)",
+                "fr": "HiWatch (JavaScript)",
+                "it": "HiWatch (JavaScript)",
+                "es": "HiWatch (JavaScript)",
+                "pl": "HiWatch (JavaScript)",
+                "zh-cn": "HiWatch (JavaScript)"
             },
             "link": "",
             "fa-icon": "info"
