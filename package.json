@@ -19,7 +19,7 @@
     "url": "https://github.com/bondrogeen/ioBroker.HiWatch"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.5.1",
+    "@iobroker/adapter-core": "^2.6.0",
     "ftp-srv": "^4.5.0"
   },
   "devDependencies": {
